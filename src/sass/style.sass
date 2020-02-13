@@ -4,44 +4,18 @@
     padding: 0
     font-family: 'Museo Sans', sans-serif
 
-@font-face 
-    font-family: 'Museo Sans'
-    src: url('../fonts/MuseoSansCyrl-300.eot')
-    src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MuseoSansCyrl-300.woff') format('woff'),
-    url('../fonts/MuseoSansCyrl-300.ttf') format('truetype')
-    font-weight: 300
-    font-style: normal
-
-@font-face 
-    font-family: 'Museo Sans'
-    src: url('../fonts/MuseoSansCyrl-500.eot')
-    src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MuseoSansCyrl-500.woff') format('woff'),
-    url('../fonts/MuseoSansCyrl-500.ttf') format('truetype')
-    font-weight: 500
-    font-style: normal
-
-@font-face 
-    font-family: 'Museo Sans'
-    src: url('../fonts/MuseoSansCyrl-700.eot')
-    src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'),
-    url('../fonts/MuseoSansCyrl-700.woff') format('woff'),
-    url('../fonts/MuseoSansCyrl-700.ttf') format('truetype')
-    font-weight: 700
-    font-style: normal
-
 
 .container
     max-width: 1140px
     margin: 0 auto
 
 .header
-    height: 70px
+    min-height: 70px
     &__wrapper
-        padding: 25px 25px
+        padding: 10px 0 10px
         display: flex
         justify-content: space-between
+        align-items: center
     &__nav
         &__menu
             width: 600px
@@ -52,7 +26,18 @@
             &__link
                 text-decoration: none
                 text-transform: uppercase
-                font-weight: 500
+                font-weight: 700
+                font-size: 25px
+    &__contacts
+        display: flex
+        flex-direction: column
+    &__phone
+        font-weight: 700
+        font-size: 25px
+        text-decoration: none
+        color: red
+
+
 
                 
 
