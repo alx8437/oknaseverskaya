@@ -12,13 +12,21 @@
         display: flex
         justify-content: space-between
         list-style-type: none
+
+
     &__menu-link
         text-decoration: none
         text-transform: uppercase
         color: $main_color
         font-weight: 900
         font-size: 25px
-        
+        transition: 1.5 all 
+        background-color: transparent 
+        z-index: 1
+        &:hover
+            text-decoration: underline
+            color: $main_color 
+
     &__contacts
         display: flex
         flex-direction: column
