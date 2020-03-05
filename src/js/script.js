@@ -20,7 +20,18 @@ $(document).ready(function() {
                     dots: false,
                     arrows: true
                 }
-            }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    autoplay: false, 
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: true
+                }
+            },
         ]
 
 
