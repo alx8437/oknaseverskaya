@@ -32,6 +32,17 @@ $(document).ready(function() {
                     arrows: true
                 }
             },
+            {
+                breakpoint: 576,
+                settings: {
+                    autoplay: false, 
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    arrows: false
+                }
+            },
         ]
 
 
