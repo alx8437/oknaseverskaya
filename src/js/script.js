@@ -1,8 +1,8 @@
 $(document).ready(function() {
     $('.carousel__inner').slick({
-        speed: 1300,
+        speed: 1500,
         adaptiveHeight: true,
-        autoplay: false,
+        autoplay: true,
         dots: false,
         infinite: true,
         slidesToShow: 2,
