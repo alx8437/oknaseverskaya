@@ -13,7 +13,7 @@ $(document).ready(function() {
             {
                 breakpoint: 1170,
                 settings: {
-                    autoplay: false, 
+                    autoplay: true, 
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
@@ -24,7 +24,7 @@ $(document).ready(function() {
             {
                 breakpoint: 768,
                 settings: {
-                    autoplay: false, 
+                    autoplay: true, 
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
@@ -35,7 +35,7 @@ $(document).ready(function() {
             {
                 breakpoint: 576,
                 settings: {
-                    autoplay: false, 
+                    autoplay: true, 
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     infinite: true,
@@ -46,5 +46,23 @@ $(document).ready(function() {
         ]
 
 
+    });
+});
+
+window.addEventListener('DOMContentLoaded', () => {
+    const menu = document.querySelector('.header__menu'),
+    menuItem = document.querySelectorAll('.header__menu-item'),
+    hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', () => {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('header__menu_active');
+    });
+
+    menuItem.forEach(item => {
+        item.addEventListener('click', () => {
+            hamburger.classList.toggle('hamburger_active');
+            menu.classList.toggle('header__menu_active');
+        });
     });
 });

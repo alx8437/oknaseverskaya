@@ -1,12 +1,23 @@
 .hamburger 
     display: none 
     position: absolute
-    right: 10px 
-    top: 50px 
+    right: 15px 
+    top: 40px 
     transform: translateY(-50%) 
     width: 70px 
+    height: 45px
     span 
         display: block
         background-color: $main-color 
         height: 3px 
         margin-bottom: 12px
+        transition: 0.5s all 
+    &_active
+        span
+            margin-bottom: -2px
+            &:nth-child(1) 
+                transform: translateY(17px) rotate(-45deg)
+            &:nth-child(2)
+                display: none
+            &:nth-child(3)
+                transform: translateY(17px) rotate(45deg)
